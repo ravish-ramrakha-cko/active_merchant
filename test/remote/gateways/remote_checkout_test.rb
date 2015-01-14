@@ -28,7 +28,7 @@ class RemoteCheckoutTest < Test::Unit::TestCase
     # Additional information
     @options = {
 
-        :currency       => 'EUR',
+        :currency       => 'USD',
         :order_id       => 'Test - 1001',
         :email        => 'bill_email@email.com',
 
@@ -61,7 +61,7 @@ class RemoteCheckoutTest < Test::Unit::TestCase
     # Missing Address (billing and shipping)
     @options_missing_address = {
 
-        :currency       => 'EUR',
+        :currency       => 'USD',
         :order_id       => 'Test - 1001',
         :email        => 'bill_email@email.com',
 
@@ -73,14 +73,14 @@ class RemoteCheckoutTest < Test::Unit::TestCase
     # Additional information
     @options_minimum = {
 
-        :currency       => 'EUR',
+        :currency       => 'USD',
         :order_id       => 'Test - 1001'
     }
 
     # Missing Track ID
     @options_minimum_missing_track_id = {
 
-        :currency       => 'EUR'
+        :currency       => 'USD'
     }
 
     # Missing oorder ID
